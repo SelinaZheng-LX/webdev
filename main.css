@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Gloria+Hallelujah&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+    background-color: #000;
+    width: 100vw;
+}
+
+h1,
+h2 {
+    font-family: "Bitcount Single Ink", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.gloria-hallelujah-regular {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    color: white;
+}
+
+.text {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    color: white;
+    max-width: 600px;
+    line-height: 1.6;
+}
+.text strong {
+    color: rgb(170, 76, 170);
+}
+
+a {
+    color: rgb(170, 76, 170);
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+}
+/* reused code */
+.veggiesPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.textSection {
+    max-width: 80%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.imageSection {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 1rem;
+}
+.imageSection img {
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tableSection {
+    max-width: 90%;
+    padding: 2rem;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 2rem 0 2rem;
+}
+em {
+    font-style: italic;
+}
+td {
+    padding: 0.5rem;
+    border: 1px solid #444;
+}
+/* haiku.html */
+.post-it {
+    position: relative;
+}
+.post-it img {
+    z-index: -1;
+}
+.notes {
+    padding: 1rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    border-radius: 8px;
+    position: absolute;
+    transform: translate(10%, -110%);
+}
+
+/* animations */
+.imageSection img:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.7);
+}
+a:hover a:focus a:active a:visited {
+    color: purple;
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
